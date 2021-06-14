@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./table.css">
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+   integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+   crossorigin="anonymous">
+</script> 
+</head>
+<body>
+    <nav>
+        <div id="logocontainer">
+            <img src="https://edu-web-fundamentals.web.app/static/media/logo.58169365.png" alt="web-logo">
+            <h3>Kafene</h3>
+        </div>
+        <div id="menu-nav">
+            <p class="menu-elem"><a  id="orders" href="./orders.html">Orders</a></p>
+            <p class="menu-elem"><a id="products" href="./products.html">Products</a></p>
+            <p class="menu-elem"><a id="users" href="./users.html">Users</a></p>
+        </div>
+        <div id="login-status-container">
+            <div  id="logout" class="login-status active flex-prop">Logout</div>
+        </div>
+    </nav>
+
+    <div id="container">
+    <h3 id="section-name">Products</h3>
+    <div id="filter-sec">
+        <h3>Filters</h3>
+        <p id="count">Count : <span id="filtered-elem"></span></p>
+        <div id="check-wrap">
+            <div id="check-opt">
+                <input type="checkbox" name="product-filter" id="expired" value="new">
+                <label for="new">Expired</label>
+            </div>
+            <div id="check-opt">
+                <input type="checkbox" name="product-filter" id="low-stock" value="packed">
+                <label for="packed">Low Stock</label>
+            </div>
+            
+        </div>
+    </div>
+    <div id="table-wrapper">
+        <div id="table-headers">
+            <table>
+                <thead>
+                    <tr>
+                        <th class="column1">Id</th>
+                        <th class="column2">Product Name</th>
+                        <th class="column3">Product Brand</th>
+                        <th class="column4">Expiry Date</th>
+                        <th class="column5">Unit Price</th>
+                        <th class="column6">Stock</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+
+        <div id="product-data table-data">
+            <table>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    </div>
+    <script src="products.js"></script>
+    <script src="logout.js"></script>
+</body>
+</html>

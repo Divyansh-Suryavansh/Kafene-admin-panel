@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html,body{
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;    
+    position: relative;
+    background-color: #ffffff;
+    background-image: url('https://www.incimages.com/uploaded_files/image/1920x1080/stethoscope_37962.jpg');
+    background-size: 150%;
+    background-attachment: fixed;
+}
+
+
+#container{
+    margin-top: 150px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-prop{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav{
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    background: #fff;
+    box-shadow: 5px 3px 25px  #ffffff;
+    opacity: 0.9;
+
+    box-shadow: 0px 0px 15px 0 #72696a;
+}
+
+#logocontainer, #menu-nav, #login-status-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-elem a{
+    padding: 0 20px;
+    text-decoration: none;
+    color: #ed143d;
+    font-weight: 600;
+}
+
+.login-status{
+    width: 100px;
+    text-align: center;
+    height: 35px;
+    background-color: #537895;
+    background-image: linear-gradient(315deg, #537895 0%, #09203f 74%);
+    color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 25px 0 #ed143d, 0 0 25px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 0 25px 0 rgba(0, 0, 0, 0.5);
+    border: none;
+    border-bottom: 1px solid rgba(255,255,255,0.6);
+    cursor: pointer;
+}
+
+.active{
+    display: none;
+}
+
+@media(max-width:600px)
+{
+    body{
+        background-size: 200%;
+    }
+
+    .menu-elem a{
+        font-size: 0.9rem;
+        padding: 0 5px;
+    }
+}
